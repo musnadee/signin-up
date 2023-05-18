@@ -1,0 +1,98 @@
+/* style.css */
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .txt_field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .txt_field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+  }
+  
+  .txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+  }
+ 
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label {
+    top: -5px;
+    font-size: 12px;
+    color: #ff652f;
+  }
+  
+  .pass {
+    color: #999;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff652f;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .signup_link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .signup_link a {
+    color: #ff652f;
+    text-decoration: none;
+  }
+  
+  .signup_link a:hover {
+    text-decoration: underline;
+  }
+  

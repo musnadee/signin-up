@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Zone | Sign Up</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="final.js"></script>
+</head>
+<body>
+    <div class="center">
+        <h1>Sign Up</h1>
+        <form method="post">
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>First Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" required>
+                <span></span>
+                <label>Last name</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" required>
+                <span></span>
+                <label>E-mail</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="confirmPassword" onkeyup="validatePassword();" required>
+                <span></span>
+                <label>Confirm Password</label>
+            </div>
+            <div id="passwordMatch" style="display: none; color: red;">
+                Password requirements: minimum 8 characters, at least 1 capital letter, 1 symbol, and 1 lowercase letter.
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+                <div class="signup_link">
+                    Already a member? <a href="index.html">Sign In</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
